@@ -29,8 +29,8 @@ cube3 = cube2.aggregated_by(['season_year'], iris.analysis.MEAN)
 cube4 = cube3.collapsed('time',iris.analysis.MEAN)
 
 
-qplt.pcolormesh(cube4)
-cmaps=[('Diverging', ['PRGn'])]
+qplt.pcolormesh(cube4, cmap='PRGn')
+#cmaps=[('Diverging', ['PRGn'])]
 #plt.xlim(40,120)
 #plt.ylim()
 plt.show()
